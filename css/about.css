@@ -1,16 +1,17 @@
 @import url('https://fonts.googleapis.com/css?family=Forum');
+@import url('https://fonts.googleapis.com/css?family=Fredericka+the+Great');
 *{
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
 }
 body{
-    background-image: url('../img/bk-final.jpg');
+    background-image: url('../img/background.jpg');
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
     height: 100%;
-    min-width: 624px;
+    min-width: 764px;
 }
 /* ------Nav------------ */
 nav{
@@ -18,9 +19,9 @@ nav{
     justify-content: space-around;
     align-items: center;
     min-height: 8vh;
-    font-family: 'Forum', cursive;
-    background-color:#336600;
-    height: 13vh;
+    font-family: 'Fjalla One', sans-serif;
+    background-color:#196666;
+    height: 100px;
 }
 .nav-links{
     display: flex;
@@ -35,7 +36,9 @@ nav{
     text-decoration: none;
     letter-spacing: 5px;
     font-weight: bold;
-    color:#66ccff;
+    font-family: 'Neuton', serif;
+
+    color:#000099;
 }
 .a-hover1:hover{
     color: #b3cce6;
@@ -84,21 +87,96 @@ nav{
     transform: rotate(+45deg) translate(-5px, -6px);
 }
 /* -------End Nav -------------- */
-/* -----------Footer -------------------*/
-footer{
-    background-color:#264d00;
+/* -------main -------------- */
+main{
+    height: 78vh;
+    background-color:rgba(128, 128, 128,80%);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.about{
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+    top: -10px;
+}
+.academic{
+    font-family: 'Fredericka the Great', cursive;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-right:1px solid #000000;
+    padding-right: 10px;
+}
+.academic h1, .skills h1,.human h1{
+    color:#e6e600;
+}
+.skills{
+    
+    font-family: 'Fredericka the Great', cursive;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-right:1px solid #000000;
+    padding-right: 10px;
+}
+.human{
+    
+    font-family: 'Fredericka the Great', cursive;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
+.project{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    top: -5px;
+}
+
+.project h1{
+    color:#e6e600;
+    font-family: 'Fredericka the Great', cursive;
+    position: relative;
+    top: -10px;
+}
+.project-holder {
+    width: 100%;
+    display: flex;
+    justify-content:space-around;
+    align-items: space-around;
+
+}
+.petshop-img{
+    width: 500px;
+    height: 300px;
+}
+.restaurant-img{
+    width: 500px;
+    height: 300px;
+}
+/* -------End main-------------- */
+/* -----------Footer -------------------*/
+footer{
+    background-color:#0f3e3e;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 9vh;
+}
 .socialMedia{
     display: flex;
+    flex-direction: row;
     justify-content: center;
     list-style: none;
     width: 80px;
+    
 }
+
 .link {
-    color:#009900;
+    color:#999900;
     padding-right: 10px;
     font-size: 2.5em;
 }
