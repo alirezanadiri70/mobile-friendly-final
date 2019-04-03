@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css?family=Forum');
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    background-image: url('../img/bk-final.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    height: 100%;
+    min-width: 624px;
+}
+/* ------Nav------------ */
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 8vh;
+    font-family: 'Forum', cursive;
+    background-color:#336600;
+    height: 13vh;
+}
+.nav-links{
+    display: flex;
+    justify-content: space-around;
+    width: 38%;
+    font-size: 23px;
+}
+.nav-links li {
+    list-style: none;
+}
+.nav-links a {
+    text-decoration: none;
+    letter-spacing: 5px;
+    font-weight: bold;
+    color:#66ccff;
+}
+.a-hover1:hover{
+    color: #b3cce6;
+    transition: 0.2s;
+}
+.a-hover2:hover{
+    color: #ffff00;
+    transition: 0.2s;
+}
+.a-hover3:hover{
+    color:#1aff66;
+    transition: 0.2s;
+}
+.burger{
+    display: none;
+    cursor: pointer;
+}
+.burger div{
+    width:30px;
+    height: 2px;
+    background-color: #4080bf;
+    margin: 5px;
+    transition: all 0.5s ease;
+}
+.nav-active{
+    transform: translateX(0%);   
+}
+@keyframes navLinkFade{
+    from{
+        opacity: 0;
+        transform:translateX(50px);
+    }
+    to{
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+.toggle .line1{
+    transform: rotate(-45deg) translate(-5px, 6px);
+    
+}
+.toggle .line2{
+    opacity: 0;
+}
+.toggle .line3{
+    transform: rotate(+45deg) translate(-5px, -6px);
+}
+/* -------End Nav -------------- */
+/* -----------Footer -------------------*/
+footer{
+    background-color:#264d00;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.socialMedia{
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    width: 80px;
+}
+.link {
+    color:#009900;
+    padding-right: 10px;
+    font-size: 2.5em;
+}
+.link:hover{
+    color: #66b3ff;
+    transition: all 0.3s ease-in;
+}
+.copyRight{
+    display: block;
+    color:#fff;
+    letter-spacing: 2px;
+}
+/* -------------End of footer--------- */
