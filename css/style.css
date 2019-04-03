@@ -1,4 +1,9 @@
 @import url('https://fonts.googleapis.com/css?family=Fjalla+One');
+@import url('https://fonts.googleapis.com/css?family=Monoton');
+@import url('https://fonts.googleapis.com/css?family=Fredericka+the+Great');
+@import url('https://fonts.googleapis.com/css?family=Carter+One|Neuton');
+
+
 *{
     margin: 0px;
     padding: 0px;
@@ -10,7 +15,7 @@ body{
     background-position: center;
     background-attachment: fixed;
     height: 100%;
-    min-width: 570px;
+    min-width: 764px;
 }
 /* ------Nav------------ */
 nav{
@@ -19,7 +24,7 @@ nav{
     align-items: center;
     min-height: 8vh;
     font-family: 'Fjalla One', sans-serif;
-    background-color: #1aa3ff;
+    background-color:#196666;
     height: 100px;
 }
 .nav-links{
@@ -35,6 +40,8 @@ nav{
     text-decoration: none;
     letter-spacing: 5px;
     font-weight: bold;
+    font-family: 'Neuton', serif;
+
     color:#000099;
 }
 .a-hover1:hover{
@@ -84,6 +91,76 @@ nav{
     transform: rotate(+45deg) translate(-5px, -6px);
 }
 /* -------End Nav -------------- */
+/* -----------section -------------------*/
+section{
+    background-color: rgba(128, 128, 128,60%);
+    height: 78vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;justify-content: space-around;
+    background-color:rgba(128, 128, 128,80%);
+}
+.name{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.full-name{
+    font-size: 5em;
+    font-family: 'Monoton', cursive;
+    color: #e6f3ff;
+    margin-bottom:10px;
+}
+.title{
+    background-color: rgba(89, 89, 89,60%);
+    color:#3399ff;
+    font-family: 'Fredericka the Great', cursive;
+    font-size: 3em;
+    padding: 5px;
+    margin-top: 30px;
+    box-shadow:0px -2px 30px 10px #1a1a1a; 
+}
+.info{
+    box-shadow:0px -2px 30px 10px #333333; 
+}
+.info p{
+    color: #fff;
+    font-size: 20px;
+}
+
+/* -------End section -------------- */
+/* -----------Footer -------------------*/
+footer{
+    background-color:#0f3e3e;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 9vh;
+}
+.socialMedia{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    list-style: none;
+    width: 80px;
+    
+}
+
+.link {
+    color:#999900;
+    padding-right: 10px;
+    font-size: 2.5em;
+}
+.link:hover{
+    color: #66b3ff;
+    transition: all 0.3s ease-in;
+}
+.copyRight{
+    display: block;
+    color:#fff;
+    letter-spacing: 2px;
+}
+/* -------------End of footer--------- */
 /* -----------Media ------------ */
 @media screen and (max-width:1024px){
     .nav-links{
