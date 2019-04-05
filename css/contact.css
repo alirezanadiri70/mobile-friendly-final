@@ -274,11 +274,17 @@ footer{
         top: -40px;
         right: 
     }
-    .text-center{
+    .text-center1{
         position: relative;
         top: -40px
     }
     
+}
+@media screen and (max-width:400px){
+    .text-center{
+        position: relative;
+        top: 10px;
+    }
 }
 .nav-active{
     transform: translateX(0%);  
