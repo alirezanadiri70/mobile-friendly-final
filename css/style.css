@@ -25,6 +25,12 @@ nav{
     font-family: 'Fjalla One', sans-serif;
     background-color:#196666;
     height: 100px;
+    transition: all 0.3s ease-in;
+}
+
+nav:hover{
+    box-shadow: 10px 10px 5px 0px black;
+    transition: box-shadow 0.3s ease-out;
 }
 .nav-links{
     display: flex;
@@ -40,7 +46,7 @@ nav{
     letter-spacing: 5px;
     font-weight: bold;
     font-family: 'Neuton', serif;
-    color:#000099;
+    color:#b3d1ff;
 }
 .a-hover1:hover{
     color: #b3cce6;
@@ -65,10 +71,7 @@ nav{
     margin: 5px;
     transition: all 0.5s ease;
 }
-.nav-active{
-    transform: translateX(0%);  
-    background-color: rgba(64, 64, 64,90%); 
-}
+
 @keyframes navLinkFade{
     from{
         opacity: 0;
@@ -177,14 +180,13 @@ footer{
 @media screen and (max-width:764px){
     body{
      overflow-x: hidden;
-     /* background-position-y: -130px; */
+
     } 
      .nav-links{
         position:absolute;
         right: 0px;
         height: 92vh;
         top: 13vh;
-       
         display: flex;
         flex-direction: column;
         align-items: center;
