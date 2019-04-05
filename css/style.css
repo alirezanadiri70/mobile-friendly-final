@@ -15,7 +15,6 @@ body{
     /* background-attachment: fixed; */
     background-position-y: -30px;
     height: 100%;
-    min-width: 764px;
 }
 /* ------Nav------------ */
 nav{
@@ -149,16 +148,18 @@ footer{
     justify-content: center;
     list-style: none;
     width: 80px;
+    width: 200px;
     
 }
 
 .link {
+    
     color:#999900;
     padding-right: 10px;
     font-size: 2.5em;
 }
 .link:hover{
-    color: #66b3ff;
+    color: #ffff1a;
     transition: all 0.3s ease-in;
 }
 .copyRight{
@@ -197,6 +198,14 @@ footer{
     .burger{
         display: block;
         margin-left: 10px;
+    }
+}
+@media screen and (max-width:739px){
+    .full-name{
+        text-align: center;
+    }
+    .title{
+        text-align: center;
     }
 }
 .nav-active{
